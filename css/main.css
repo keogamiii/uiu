@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Playpen Sans", cursive;
+    font-optical-sizing:auto;
+    font-style:normal;
+    color: white;
+    background-color:rgba(211, 142, 39, 0.863) ;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.asort{
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.head{
+    margin: 0 auto;
+    padding: 8px 16px;
+    text-align: center;
+    font-size: 1.1em;
+    background-color: rgba(198, 168, 128, 0.7);
+}
+
+h1{
+    font-size: 1.5rem;
+    line-height: 1.1;
+    margin-bottom: 4px;
+}
+
+h2{
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+.stolp{
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.cofecard{
+    flex: 1;
+    background-color: #c6a880;
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.15);
+    max-width: 250px;
+    height: 260px;
+}
+
+
+.americano{
+    margin-top: 40px;
+    max-width: 250px;
+    border-radius: 16px;
+}
+
+
+.sum{
+    padding: 15px;
+    margin-left: 65px;
+    font-weight: 700;
+}
+
+.ord-btn {
+  width: 250PX;
+  padding: 12px 0;
+  background-color: #222;
+  color: #C6A880;
+  border: 2px solid #C6A880;
+  border-radius: 12px;
+  font-family: "Playpen Sans", cursive;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.ord-btn:hover {
+  background-color: #C6A880;
+  color: #000;
+  transform: translateY(-2px);
+}
+
+.ord-btn:active {
+  transform: translateY(1px);
+}
+
+.caputuno{
+    border-radius: 16px;
+    margin-top: 38px;
+    max-width: 250px;
+}
+
+.item-stolp{
+    margin-left: 50px;
+}
+
+.cart{
+    flex: 1;
+    background-color: #4A3B33;
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.15);
+    max-width: 300px;
+    max-height: 250px;
+    margin-top: 40px;
+}
+
+.ter{
+    margin-top: 40px;
+    max-width: 250px;
+    height: 250px;
+    border-radius: 16px;
+}
+
+.chiz{
+    margin-top: 40px;
+    max-width: 250px;
+    height: 250px;
+    border-radius: 16px;
+}
+
+@media (max-width:1199px){
+    .asort{
+        text-align: center;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+    }
+    .item-stolp{
+        margin-left: 0px;
+        box-sizing: border-box;
+   }
+   .cart{
+    max-height: 500px;
+    max-width: 500px;
+   }
+   
+}
